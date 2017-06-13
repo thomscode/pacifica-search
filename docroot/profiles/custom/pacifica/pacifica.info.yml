@@ -6,5 +6,13 @@ core: 8.x
 distribution:
   name: Pacifica
 
+dependencies:
+  - coffee
+  - features
+  - features_ui
+  - migrate_plus
+  - admin_toolbar
+  - admin_toolbar_tools
+
 base profile:
   name: standard
