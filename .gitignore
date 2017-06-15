@@ -31,3 +31,7 @@ index.php
 robots.txt
 update.php
 web.config
+
+# Ignore docksal local configuration files
+.docksal/docksal-local.env
+.docksal/docksal-local.yml
