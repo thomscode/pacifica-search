@@ -47,6 +47,11 @@
       "drush/contrib/{$name}": [
         "type:drupal-drush"
       ]
+    },
+    "patches": {
+      "drupal/core": {
+        "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-303.patch"
+      }
     }
   },
   "license": "GPL-2.0+",
