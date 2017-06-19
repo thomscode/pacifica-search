@@ -7,6 +7,7 @@
 ### Docksal (local development)
 #### Requirements
 * [Docksal](https://docksal.io)
+* [Composer](https://getcomposer.org)
 
 Set local environment variables:
 
@@ -18,6 +19,7 @@ vi .docksal/docksal-local.env
 Run installation script
 
 ```bash
+composer install
 fin init
 ```
 
