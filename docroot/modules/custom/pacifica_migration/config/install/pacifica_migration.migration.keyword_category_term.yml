@@ -1,0 +1,65 @@
+id: keyword_category_term
+label: Categories for the proposal keywords
+migration: eus
+
+destination:
+  plugin: entity:taxonomy_term
+
+process:
+  name: name
+  vid:
+    plugin: default_value
+    default_value: keyword_categories
+
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      name: MESH
+    -
+      name: ENVO
+    -
+      name: UNITSONT
+    -
+      name: RADLEX
+    -
+      name: MEDLINEPLUS
+    -
+      name: CHEBI
+    -
+      name: UBERON
+    -
+      name: CRISP
+    -
+      name: ZFA
+    -
+      name: SIO
+    -
+      name: EDAM
+    -
+      name: XCO
+    -
+      name: PATO
+    -
+      name: NPO
+    -
+      name: BAO
+    -
+      name: CHMO
+    -
+      name: OBI
+    -
+      name: BRO
+    -
+      name: EFO
+    -
+      name: RB
+    -
+      name: ERO
+    -
+      name: HUPSON
+    -
+      name: InterNANO
+  ids:
+    name:
+      type: string

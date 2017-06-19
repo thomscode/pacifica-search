@@ -1,0 +1,291 @@
+id: keyword_term
+label: Keywords for the proposals
+migration: eus
+
+destination:
+  plugin: entity:taxonomy_term
+
+process:
+  name: keyword
+  description: note
+  vid:
+    plugin: default_value
+    default_value: keywords
+  field_link: url
+  field_categories: categories
+
+migration_dependencies:
+  required:
+    - keyword_categories
+
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      keyword: soil
+      categories: MESH, ENVO
+      url: http://mimi.case.edu/ontologies/2009/1/UnitsOntology#scale
+      note:
+    -
+      keyword: carbon
+      categories: MESH, RADLEX
+      url: http://purl.bioontology.org/ontology/MESH/D002244
+      note:
+    -
+      keyword: scale
+      categories: UNITSONT
+      url: http://mimi.case.edu/ontologies/2009/1/UnitsOntology#scale
+      note:
+    -
+      keyword: global
+      categories:
+      url:
+      note:
+    -
+      keyword: warming
+      categories: MESH, MEDLINEPLUS
+      url: http://purl.bioontology.org/ontology/MESH/D057232
+      note: global warming
+    -
+      keyword: water
+      categories: MESH, CHEBI
+      url: http://purl.bioontology.org/ontology/MESH/D014867
+      note:
+    -
+      keyword: pore
+      categories: UBERON, ZFA
+      url: http://purl.obolibrary.org/obo/UBERON_0008915
+      note:
+    -
+      keyword: model(s)
+      categories: CRISP, SIO
+      url: http://purl.bioontology.org/ontology/CSP/1944-9333
+      note:
+    -
+      keyword: conditions
+      categories:
+      url:
+      note:
+    -
+      keyword: environment
+      categories: MESH, CRISP
+      url: http://purl.bioontology.org/ontology/MESH/D004777
+      note:
+    -
+      keyword: structure
+      categories: EDAM, PATO
+      url: http://edamontology.org/data_0883
+      note:
+    -
+      keyword: chemical
+      categories: XCO, CRISP
+      url: http://purl.obolibrary.org/obo/XCO_0000088
+      note:
+    -
+      keyword: FE
+      categories: MESH
+      url: http://purl.bioontology.org/ontology/MESH/D007501
+      note:
+    -
+      keyword: samples
+      categories: NPO, SIO
+      url: http://purl.bioontology.org/ontology/npo#NPO_1487
+      note:
+    -
+      keyword: electron
+      categories: CHEBI
+      url: http://purl.obolibrary.org/obo/CHEBI_10545
+      note:
+    -
+      keyword: ion
+      categories: CHEBI, CRISP
+      url: http://purl.obolibrary.org/obo/CHEBI_24870
+      note:
+    -
+      keyword: energy
+      categories: PATO, NPO
+      url: http://purl.obolibrary.org/obo/PATO_0001021
+      note:
+    -
+      keyword: SITU
+      categories:
+      url:
+      note:
+    -
+      keyword: Electrochemical
+      categories: MESH
+      url: http://purl.bioontology.org/ontology/MESH/D055664
+      note: electrochemical techniques
+    -
+      keyword: catalyst
+      categories: CHEBI, CRISP
+      url: http://purl.obolibrary.org/obo/CHEBI_35223
+      note:
+    -
+      keyword: metal
+      categories: NPO, CRISP
+      url: http://purl.bioontology.org/ontology/npo#NPO_210
+      note:
+    -
+      keyword: NMR
+      categories: MESH, BAO
+      url: http://purl.bioontology.org/ontology/MESH/D009682
+      note:
+    -
+      keyword: CO2
+      categories: CHEBI, MESH
+      url: http://purl.obolibrary.org/obo/CHEBI_16526
+      note:
+    -
+      keyword: soil organic matter
+      categories: ENVO
+      url: http://purl.obolibrary.org/obo/ENVO_01000137
+      note: organic matter fall
+    -
+      keyword: acid base
+      categories: CRISP
+      url: http://purl.bioontology.org/ontology/CSP/0465-0476
+      note: acid base balance
+    -
+      keyword: energy density
+      categories:
+      url: http://bhi.washington.edu/OPB#OPB_01189
+      note:
+    -
+      keyword: lithium ion batteries
+      categories: XCO
+      url: http://purl.obolibrary.org/obo/XCO_0000313
+      note: lithium ion
+    -
+      keyword: mineral surface
+      categories:
+      url:
+      note:
+    -
+      keyword: microbial activity
+      categories:
+      url:
+      note:
+    -
+      keyword: natural organic matter
+      categories:
+      url:
+      note:
+    -
+      keyword: redox reactions
+      categories: MESH, CRISP
+      url: http://purl.bioontology.org/ontology/MESH/D010084
+      note: redox
+    -
+      keyword: conjugated QDs
+      categories: MESH
+      url: http://purl.bioontology.org/ontology/MESH/D045663
+      note: quantum dots
+    -
+      keyword: TC
+      categories: MESH, RADLEX
+      url: http://purl.bioontology.org/ontology/MESH/D013667
+      note: technetium
+    -
+      keyword: TEM
+      categories: NPO, CHMO
+      url: http://purl.bioontology.org/ontology/npo#NPO_1441
+      note: transmission electron microscope
+    -
+      keyword: electrode electrolyte interface
+      categories:
+      url:
+      note:
+    -
+      keyword: chevrel phases
+      categories:
+      url:
+      note:
+    -
+      keyword: resolution mass spectrometer
+      categories: OBI, BRO
+      url: http://purl.obolibrary.org/obo/OBI_0000049
+      note: mass spectrometer
+    -
+      keyword: electronic
+      categories: MESH
+      url: http://purl.bioontology.org/ontology/MESH/D004581
+      note:
+    -
+      keyword: metals
+      categories: NPO, CRISP
+      url: http://purl.bioontology.org/ontology/npo#NPO_210
+      note: metal
+    -
+      keyword: bacteria
+      categories: MESH, CRISP
+      url: http://purl.bioontology.org/ontology/MESH/D001419
+      note:
+    -
+      keyword: substrate
+      categories: EFO, BAO
+      url: http://www.ebi.ac.uk/efo/EFO_0005061
+      note:
+    -
+      keyword: EMSL NMR
+      categories: MESH, NPO
+      url: http://purl.bioontology.org/ontology/MESH/D009682
+      note:
+    -
+      keyword: optimization
+      categories:
+      url:
+      note:
+    -
+      keyword: Egs
+      categories:
+      url:
+      note: enhanced geothermal system
+    -
+      keyword: CO
+      categories: CHEBI, MESH
+      url: http://purl.obolibrary.org/obo/CHEBI_17245
+      note:
+    -
+      keyword: permafrost
+      categories: MESH, ENVO
+      url: http://purl.bioontology.org/ontology/MESH/D065946
+      note:
+    -
+      keyword: proteins
+      categories: CHEBI, EDAM
+      url: http://purl.obolibrary.org/obo/CHEBI_36080
+      note: protein
+    -
+      keyword: molecular mechanisms
+      categories: RB
+      url: http://regenbase.org/ontology#RB_0000202
+      note: molecular mechanism
+    -
+      keyword: atom probe tomography
+      categories: ERO, CHMO
+      url: http://purl.obolibrary.org/obo/ERO_0001653
+      note:
+    -
+      keyword: NPS
+      categories: MESH, InterNANO
+      url: http://purl.bioontology.org/ontology/MESH/D053758
+      note: nanoparticles
+    -
+      keyword: OH
+      categories: CRISP, CHEBI
+      url: http://purl.bioontology.org/ontology/CSP/1494-6540
+      note: hydroxyl group
+    -
+      keyword: microbes
+      categories: HUPSON
+      url: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Microorganism
+      note: microbe
+    -
+      keyword: adaption
+      categories:
+      url:
+      note:
+  ids:
+    keyword:
+      type: string
