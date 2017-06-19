@@ -1,0 +1,14 @@
+type: module
+name: Pacifica Migration
+description: 'REST based migration of Pacifica data to Drupal 8'
+package: Pacifica
+dependencies:
+    - drupal:migrate
+    - pacifica_migration:pacifica_migration_setup
+    - migrate_plus:migrate_plus
+config_devel:
+ install:
+   - migrate_plus.migration_group.eus
+   - migrate_plus.migration.instrument_node
+core: '8.x'
+project: 'pacifica_migration'

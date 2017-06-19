@@ -1,0 +1,18 @@
+type: module
+name: Pacifica Migration Setup
+description: 'Separate site configuration for the example from the actual migration.'
+package: Data Migration
+# core: 8.x
+hidden: 1
+dependencies:
+  - drupal:comment
+  - drupal:image
+  - drupal:text
+  - drupal:taxonomy
+  - drupal:rest
+
+# Information added by Drupal.org packaging script on 2017-05-08
+version: '8.x-3.0-beta1+9-dev'
+core: '8.x'
+project: 'pacifica_migration'
+datestamp: 1494273788

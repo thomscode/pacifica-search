@@ -1,0 +1,60 @@
+id: instrument_node
+label: Migrate instrumentation entities from EUS to Content nodes
+migration_group: eus
+source:
+    # plugin: instrument
+    plugin: url
+    data_fetcher_plugin: http
+    data_parser_plugin: json
+    urls: http://metadata:8121/instruments
+
+    item_selector: /
+
+    fields:
+        -
+            name: instrument_id
+            label: "Instrument ID"
+            selector: _id
+        -
+            name: instrument_name
+            label: "Instrument Name"
+            selector: name
+        -
+            name: instrument_display_name
+            label: "More descriptive name for the instrument"
+            selector: display_name
+        -
+            name: instrument_name_short
+            label: "Less descriptive name for the instrument"
+            selector: name_short
+        -
+            name: is_active
+            label: "Is the instrument actively available"
+            selector: active
+
+    ids:
+        instrument_id:
+            type: integer
+
+destination:
+    plugin: entity:node
+
+process:
+    type:
+        plugin: default_value
+        default_value: instrument
+    title: instrument_name
+    instrument_id: instrument_id
+    instrument_name: instrument_name
+    instrument_display_name: instrument_display_name
+    instrument_name_short: instrument_name_short
+    is_active: is_active
+    sticky:
+        plugin: default_value
+        default_value: 0
+    #instrument_category: category
+
+dependencies:
+    enforced:
+        module:
+            - pacifica_migration

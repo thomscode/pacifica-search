@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrument_display_name
+    - node.type.instrument
+  module:
+    - text
+id: node.instrument.field_instrument_display_name
+field_name: field_instrument_display_name
+entity_type: node
+bundle: instrument
+label: 'Display Name'
+description: 'Full name of this instrument'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

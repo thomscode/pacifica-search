@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Proposal Type'
+vid: proposal_type
+description: 'General categorization'
+hierarchy: 0
+weight: 0

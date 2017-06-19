@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Instrument Category'
+vid: instrument_category
+description: 'Broad classes of instrumentation by type'
+hierarchy: 0
+weight: 0

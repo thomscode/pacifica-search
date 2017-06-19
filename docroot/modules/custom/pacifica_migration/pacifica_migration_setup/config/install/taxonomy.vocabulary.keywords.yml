@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Keywords
+vid: keywords
+description: 'Keywords extracted from Metadata'
+hierarchy: 0
+weight: 0

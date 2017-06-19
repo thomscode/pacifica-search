@@ -1,0 +1,8 @@
+id: eus
+label: EUS Data Sync
+description: Import of the primary user/instrument/proposal metadata from EUS
+source_type: REST-JSON API
+dependencies:
+    enforced:
+        module:
+            - pacifica_migration

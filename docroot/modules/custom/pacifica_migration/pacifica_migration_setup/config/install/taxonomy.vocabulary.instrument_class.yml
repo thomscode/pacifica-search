@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Instrument Class'
+vid: instrument_class
+description: 'Groupings of instruments that are operationally identical for purposes of data acquisition'
+hierarchy: 0
+weight: 0

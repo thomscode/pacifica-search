@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proposal_science_theme
+    - node.type.proposal
+    - taxonomy.vocabulary.science_theme
+id: node.proposal.field_proposal_science_theme
+field_name: field_proposal_science_theme
+entity_type: node
+bundle: proposal
+label: 'Science Theme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      science_theme: science_theme
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
